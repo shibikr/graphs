@@ -11,7 +11,7 @@ describe("shortest path",function(){
 
 		var e1=new graphs.Edge("e1",'A','B',1);
 		g.addEdge(e1);
-
+		
 		var path=g.shortestPath('A','B');
 		assert.equal(1,path.length);
 		assert.deepEqual(e1,path[0]);
